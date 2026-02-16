@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main() {
-	fmt.Println("Hello GitHub Actions!")
+	fmt.Println(strings.Join(os.Args[1:], " "))
 }
