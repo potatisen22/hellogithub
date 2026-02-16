@@ -1,11 +1,14 @@
+name: GitHub Action Go
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
   github-action-go:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: ./
-          echo "Building the action..."
-          docker build -t github-action-go .
-          echo "Running tests..."
-          # Add your test commands here, for example:
-          # docker run --rm github-action-go go test ./...
