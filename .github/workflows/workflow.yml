@@ -2,7 +2,7 @@ jobs:
   github-action-go:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: ./
           echo "Building the action..."
           docker build -t github-action-go .
