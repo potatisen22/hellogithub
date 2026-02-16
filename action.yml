@@ -1,0 +1,5 @@
+name: "github-action-go"
+description: "An example of buulding github actions with go"
+runs:
+  using: docker
+  image: Dockerfile
